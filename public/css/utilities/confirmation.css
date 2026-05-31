@@ -406,10 +406,6 @@ article.confirmation-page {
 }
 
 @media print {
-    @page {
-        margin: 0.5in;
-    }
-
     header,
     footer,
     .confirmation-actions,
@@ -447,10 +443,6 @@ article.confirmation-page {
         .confirmation-content {
             gap: var(--space-lg);
 
-            .section-title {
-                margin-bottom: var(--space-sm);
-            }
-
             .booking-details,
             .passengers-info,
             .detail-card,
@@ -466,24 +458,6 @@ article.confirmation-page {
             .booking-details .details-grid .detail-card {
                 box-shadow: none;
                 padding: var(--space-sm);
-            }
-
-            .passengers-info .passengers-list {
-                gap: var(--space-sm);
-            }
-
-            .passengers-info .passengers-list .passenger-info-card {
-                box-shadow: none;
-            }
-
-            .passengers-info .passengers-list .passenger-info-card .passenger-details {
-                flex-direction: row;
-                gap: var(--space-md);
-                padding: var(--space-sm);
-            }
-
-            .passengers-info .passengers-list .passenger-info-card .passenger-details .passenger-detail {
-                flex: 1;
             }
         }
     }
