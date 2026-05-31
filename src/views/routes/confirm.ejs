@@ -22,7 +22,6 @@
             
             <div class="details-grid">
                 <div class="detail-card">
-                    <div class="detail-icon">🎫</div>
                     <div class="detail-content">
                         <span class="detail-label">Ticket Class</span>
                         <span class="detail-value"><%= confirmation.ticketClass %></span>
@@ -30,7 +29,6 @@
                 </div>
 
                 <div class="detail-card">
-                    <div class="detail-icon">📅</div>
                     <div class="detail-content">
                         <span class="detail-label">Travel Day</span>
                         <span class="detail-value"><%= confirmation.selectedDay %></span>
@@ -38,7 +36,6 @@
                 </div>
 
                 <div class="detail-card">
-                    <div class="detail-icon">👥</div>
                     <div class="detail-content">
                         <span class="detail-label">Number of Passengers</span>
                         <span class="detail-value"><%= confirmation.passengers.length %></span>
@@ -46,7 +43,6 @@
                 </div>
 
                 <div class="detail-card">
-                    <div class="detail-icon">🕐</div>
                     <div class="detail-content">
                         <span class="detail-label">Booked On</span>
                         <span class="detail-value"><%= new Date(confirmation.createdAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) %></span>
@@ -132,7 +128,6 @@
 
         <div class="confirmation-actions">
             <button onclick="window.print()" class="btn btn-secondary">
-                <span class="btn-icon">🖨️</span>
                 Print Confirmation
             </button>
             <a href="/routes" class="btn btn-primary">Browse More Routes</a>

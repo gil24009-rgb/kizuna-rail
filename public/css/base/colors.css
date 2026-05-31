@@ -1,32 +1,32 @@
 :root {
-    /* Colors - Deep Forest and Warm Brass Theme */
-    --clr-primary: #1f5146;
-    --clr-primary-light: #397568;
-    --clr-primary-pale: #dcebe5;
-    --clr-accent: #173d36;
-    --clr-accent-warm: #b17a45;
+    /* Colors - Paper, Ink, and Muted Vermilion */
+    --clr-primary: #405b54;
+    --clr-primary-light: #6f8a82;
+    --clr-primary-pale: #e5ebe7;
+    --clr-accent: #293b37;
+    --clr-accent-warm: #a34f3e;
 
     /* Lighter secondary variants */
-    --clr-primary-secondary: rgba(31, 81, 70, 0.12);
-    --clr-primary-light-secondary: rgba(57, 117, 104, 0.14);
-    --clr-primary-pale-secondary: rgba(220, 235, 229, 0.55);
-    --clr-accent-secondary: rgba(23, 61, 54, 0.12);
-    --clr-accent-warm-secondary: rgba(177, 122, 69, 0.14);
+    --clr-primary-secondary: rgba(64, 91, 84, 0.12);
+    --clr-primary-light-secondary: rgba(111, 138, 130, 0.14);
+    --clr-primary-pale-secondary: rgba(229, 235, 231, 0.55);
+    --clr-accent-secondary: rgba(41, 59, 55, 0.12);
+    --clr-accent-warm-secondary: rgba(163, 79, 62, 0.14);
     
-    --clr-background: #f7f5ef;
+    --clr-background: #f4f0e8;
     --clr-surface: #ffffff;
-    --clr-surface-alt: #f0eee7;
+    --clr-surface-alt: #ece7dc;
     
-    --clr-text-primary: #1d312e;
-    --clr-text-secondary: #526560;
-    --clr-text-muted: #82908c;
+    --clr-text-primary: #303936;
+    --clr-text-secondary: #64716d;
+    --clr-text-muted: #8e9894;
 
     --clr-text-alt-primary: #f8faf9;
     --clr-text-alt-secondary: #d8e3dd;
     --clr-text-alt-muted: #a8c9b8;
     
-    --clr-border: #d8dfda;
-    --clr-border-light: #e8ece9;
+    --clr-border: #d8d4ca;
+    --clr-border-light: #e8e4dc;
     
     /* Regional Colors */
     --clr-region-central: #faf6f0;

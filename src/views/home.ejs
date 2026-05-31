@@ -1,31 +1,37 @@
 <%- include('./partials/header') %>
 <section class="hero-home">
-    <h1>Discover Japan's Scenic Railways</h1>
-    <p class="hero-subtitle">Journey through breathtaking landscapes on Japan's most beautiful train routes</p>
-    <a href="/routes" class="hero-cta">Explore Routes</a>
+    <div class="hero-image">
+        <img src="/images/routes/sakura-valley.webp" alt="A scenic railway route through the mountains of Japan">
+    </div>
+    <div class="hero-copy">
+        <p class="hero-kicker">Scenic Rail Journeys · Japan</p>
+        <h1>Discover Japan's Scenic Railways</h1>
+        <p class="hero-subtitle">Journey through breathtaking landscapes on Japan's most beautiful train routes.</p>
+        <a href="/routes" class="hero-cta">Explore Routes <span aria-hidden="true">→</span></a>
+    </div>
 </section>
 
 <section class="features">
     <div class="feature-card">
-        <div class="feature-icon">🏔️</div>
+        <p class="feature-number">01</p>
         <h3>Mountain Views</h3>
         <p>Experience the majesty of the Japanese Alps and volcanic peaks from comfortable panoramic trains</p>
     </div>
 
     <div class="feature-card">
-        <div class="feature-icon">🌸</div>
+        <p class="feature-number">02</p>
         <h3>Seasonal Beauty</h3>
         <p>Cherry blossoms in spring, vibrant autumn colors, and serene winter landscapes await</p>
     </div>
 
     <div class="feature-card">
-        <div class="feature-icon">🌊</div>
+        <p class="feature-number">03</p>
         <h3>Coastal Routes</h3>
         <p>Follow dramatic coastlines along the Sea of Japan with stunning ocean vistas</p>
     </div>
 
     <div class="feature-card">
-        <div class="feature-icon">🏛️</div>
+        <p class="feature-number">04</p>
         <h3>Historic Villages</h3>
         <p>Pass through traditional Japanese villages and historic towns frozen in time</p>
     </div>
@@ -44,7 +50,7 @@
                 <h3>Alpine Panorama Express</h3>
                 <p>Journey through the Japanese Alps with stunning mountain views and traditional villages.</p>
                 <div class="featured-meta">
-                    <span class="meta-item">🕑 4.5 hours</span>
+                    <span class="meta-item">4.5 hours</span>
                     <span class="meta-item season-autumn">Best in Autumn</span>
                 </div>
                 <a href="/routes/alpine-panorama" class="featured-link">View Details →</a>
@@ -59,7 +65,7 @@
                 <h3>Sakura Valley Limited</h3>
                 <p>Experience cherry blossom season along scenic river valleys and mountain passes.</p>
                 <div class="featured-meta">
-                    <span class="meta-item">🕑 2.5 hours</span>
+                    <span class="meta-item">2.5 hours</span>
                     <span class="meta-item season-spring">Best in Spring</span>
                 </div>
                 <a href="/routes/sakura-valley" class="featured-link">View Details →</a>
@@ -74,7 +80,7 @@
                 <h3>Winter Wetlands Steam Train</h3>
                 <p>Steam locomotive journey through snowy wetlands famous for red-crowned cranes.</p>
                 <div class="featured-meta">
-                    <span class="meta-item">🕑 2 hours</span>
+                    <span class="meta-item">2 hours</span>
                     <span class="meta-item season-winter">Best in Winter</span>
                 </div>
                 <a href="/routes/winter-wetlands" class="featured-link">View Details →</a>
@@ -86,6 +92,6 @@
 <section class="cta-section">
     <h2>Ready to Start Your Journey?</h2>
     <p>Browse our collection of scenic railway routes and book your unforgettable experience</p>
-    <a href="/routes" class="cta-button">Browse All Routes</a>
+    <a href="/routes" class="cta-button">Browse All Routes <span aria-hidden="true">→</span></a>
 </section>
 <%- include('./partials/footer') %>
