@@ -73,7 +73,7 @@ footer .terminal-prompt {
     display: grid;
     grid-template-columns: 1fr;
     overflow: hidden;
-    background-color: #ffffff;
+    background: #ffffff;
     border: 1px solid #d8d4ca;
     border-radius: 0;
     text-align: left;
