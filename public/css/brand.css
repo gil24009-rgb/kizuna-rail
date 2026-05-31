@@ -199,6 +199,48 @@ footer .terminal-prompt {
     color: #a34f3e;
 }
 
+.featured-routes .featured-grid .featured-route .featured-content .featured-meta {
+    gap: var(--space-lg);
+    align-items: baseline;
+    padding-bottom: var(--space-sm);
+}
+
+.featured-routes .featured-grid .featured-route .featured-content .featured-meta .meta-item {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    color: #64716d;
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.featured-routes .featured-grid .featured-route .featured-content .featured-meta .season-spring,
+.featured-routes .featured-grid .featured-route .featured-content .featured-meta .season-summer,
+.featured-routes .featured-grid .featured-route .featured-content .featured-meta .season-autumn,
+.featured-routes .featured-grid .featured-route .featured-content .featured-meta .season-winter {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.featured-routes .featured-grid .featured-route .featured-content .featured-meta .season-spring {
+    color: #a26475;
+}
+
+.featured-routes .featured-grid .featured-route .featured-content .featured-meta .season-summer {
+    color: #4f7661;
+}
+
+.featured-routes .featured-grid .featured-route .featured-content .featured-meta .season-autumn {
+    color: #a34f3e;
+}
+
+.featured-routes .featured-grid .featured-route .featured-content .featured-meta .season-winter {
+    color: #56758d;
+}
+
 .cta-section {
     padding: var(--space-2xl);
     background-color: #ebe5d9;
@@ -283,6 +325,31 @@ footer .terminal-prompt {
     letter-spacing: 0.14em;
 }
 
+.routes-grid .route-card .route-details .detail-item .season-badge {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+}
+
+.routes-grid .route-card .route-details .detail-item .season-spring {
+    color: #a26475;
+}
+
+.routes-grid .route-card .route-details .detail-item .season-summer {
+    color: #4f7661;
+}
+
+.routes-grid .route-card .route-details .detail-item .season-autumn {
+    color: #a34f3e;
+}
+
+.routes-grid .route-card .route-details .detail-item .season-winter {
+    color: #56758d;
+}
+
 .routes-grid .route-card .route-description {
     max-width: 760px;
 }
@@ -363,6 +430,20 @@ article.route-detail .route-info .route-operating .months-grid .month-badge {
     color: #405b54;
 }
 
+article.route-detail .route-info .route-schedules .schedules-grid .schedule-card {
+    align-items: flex-start;
+    padding: var(--space-lg);
+}
+
+article.route-detail .route-info .route-schedules .schedules-grid .schedule-card .schedule-times,
+article.route-detail .route-info .route-schedules .schedules-grid .schedule-card .schedule-days {
+    justify-content: flex-start;
+}
+
+article.route-detail .route-info .route-schedules .schedules-grid .schedule-card .schedule-times .time-block {
+    align-items: flex-start;
+}
+
 article.booking-page .booking-form > section {
     padding: var(--space-xl);
     background-color: #ffffff;
@@ -371,18 +452,71 @@ article.booking-page .booking-form > section {
     box-shadow: none;
 }
 
+article.booking-page .booking-form {
+    gap: var(--space-xl);
+}
+
+article.booking-page .booking-form .ticket-selection .ticket-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
 article.booking-page .booking-form .ticket-selection .ticket-options .ticket-card {
-    border-color: #d8d4ca;
+    margin: 0;
+    padding: var(--space-sm) 0;
+    border: none;
+    border-top: 1px solid #d8d4ca;
     border-radius: 0;
+}
+
+article.booking-page .booking-form .ticket-selection .ticket-options .ticket-card:last-child {
+    border-bottom: 1px solid #d8d4ca;
 }
 
 article.booking-page .booking-form .ticket-selection .ticket-options .ticket-card input[type='radio']:checked ~ .ticket-content {
     background-color: #e5ebe7;
 }
 
+article.booking-page .booking-form .ticket-selection .ticket-options .ticket-card .ticket-content {
+    padding: var(--space-lg);
+}
+
+article.booking-page .booking-form .ticket-selection .ticket-options .ticket-card .ticket-content .ticket-header {
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+article.booking-page .booking-form .day-selection .schedule-info {
+    align-items: flex-start;
+}
+
+article.booking-page .booking-form .day-selection .schedule-info .days-display .day-pill {
+    border-radius: 0;
+}
+
+article.booking-page .booking-form .passengers-section .passengers-list .passenger-card {
+    border-color: #d8d4ca;
+    border-radius: 0;
+    box-shadow: none;
+}
+
 article.booking-page .booking-form .booking-summary {
     border-color: #d8d0c1;
     background-color: #f9f7f2;
+}
+
+article.booking-page .booking-form .booking-summary .summary-content {
+    max-width: 620px;
+}
+
+article.booking-page .booking-form .form-actions {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+article.booking-page .booking-form .form-actions .btn {
+    border-radius: 0;
 }
 
 article.confirmation-page .confirmation-header {
