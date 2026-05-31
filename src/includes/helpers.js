@@ -17,6 +17,16 @@ const kmToMiles = (km) => {
 };
 
 /**
+ * Converts a month number to its three-letter abbreviation.
+ * @param {number} month - The month number, from 1 through 12.
+ * @returns {string} The abbreviated month name.
+ */
+const monthNumberToAbbreviation = (month) => {
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    return months[month - 1];
+};
+
+/**
  * Converts Japanese Yen to US Dollars.
  * @param {number} yen - The amount in Japanese Yen.
  * @returns {number} The equivalent amount in US Dollars.
@@ -26,4 +36,4 @@ const yenToUsd = (yen) => {
     return yen * exchangeRate;
 };
 
-export { generateConfirmationCode, kmToMiles, yenToUsd };
+export { generateConfirmationCode, kmToMiles, monthNumberToAbbreviation, yenToUsd };

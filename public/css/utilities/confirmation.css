@@ -406,14 +406,85 @@ article.confirmation-page {
 }
 
 @media print {
-    article.confirmation-page {
-        .confirmation-actions {
-            display: none;
-        }
+    @page {
+        margin: 0.5in;
+    }
 
+    header,
+    footer,
+    .confirmation-actions,
+    .next-steps,
+    .important-info {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    article.confirmation-page {
         .confirmation-header {
             background-color: white;
             border: 2px solid var(--clr-primary);
+            gap: var(--space-sm);
+            margin-bottom: var(--space-lg);
+            padding: var(--space-md);
+
+            .success-icon {
+                display: none;
+            }
+
+            .booking-reference {
+                margin-top: 0;
+                padding: var(--space-sm) var(--space-lg);
+            }
+        }
+
+        .confirmation-content {
+            gap: var(--space-lg);
+
+            .section-title {
+                margin-bottom: var(--space-sm);
+            }
+
+            .booking-details,
+            .passengers-info,
+            .detail-card,
+            .passenger-info-card {
+                break-inside: avoid;
+            }
+
+            .booking-details .details-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: var(--space-sm);
+            }
+
+            .booking-details .details-grid .detail-card {
+                box-shadow: none;
+                padding: var(--space-sm);
+            }
+
+            .passengers-info .passengers-list {
+                gap: var(--space-sm);
+            }
+
+            .passengers-info .passengers-list .passenger-info-card {
+                box-shadow: none;
+            }
+
+            .passengers-info .passengers-list .passenger-info-card .passenger-details {
+                flex-direction: row;
+                gap: var(--space-md);
+                padding: var(--space-sm);
+            }
+
+            .passengers-info .passengers-list .passenger-info-card .passenger-details .passenger-detail {
+                flex: 1;
+            }
         }
     }
 }
