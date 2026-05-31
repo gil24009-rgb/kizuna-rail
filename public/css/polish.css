@@ -1,0 +1,465 @@
+/* Visual polish inspired by Japanese scenic railway and travel websites. */
+body {
+    background:
+        radial-gradient(circle at top left, rgba(220, 235, 229, 0.75), transparent 28rem),
+        var(--clr-background);
+}
+
+main {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-2xl);
+}
+
+h1,
+h2,
+h3 {
+    letter-spacing: -0.025em;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: linear-gradient(110deg, #123a33, #1f5146 70%, #2c675b);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 8px 24px rgba(16, 50, 45, 0.18);
+}
+
+header .content {
+    align-items: center;
+}
+
+header .content .logo img {
+    height: 68px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+header .content nav ul li a {
+    border-color: rgba(255, 255, 255, 0.22);
+    background-color: rgba(255, 255, 255, 0.94);
+    color: var(--clr-primary);
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+header .content nav ul li a:hover {
+    background-color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.6);
+    color: var(--clr-accent-warm);
+    transform: translateY(-2px);
+}
+
+header .content nav ul li:nth-last-child(-n + 2) a {
+    opacity: 0.72;
+}
+
+footer {
+    background: #173d36;
+    border-top: none;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+footer .terminal-prompt {
+    opacity: 0.78;
+}
+
+.hero-home {
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    overflow: hidden;
+    padding: clamp(3rem, 8vw, 7rem);
+    text-align: left;
+    background:
+        linear-gradient(90deg, rgba(14, 45, 40, 0.9), rgba(14, 45, 40, 0.48) 58%, rgba(14, 45, 40, 0.12)),
+        url('/images/routes/sakura-valley.webp') center / cover;
+    border-radius: 28px;
+    box-shadow: var(--shadow-lg);
+}
+
+.hero-home h1 {
+    max-width: 720px;
+    margin-bottom: var(--space-sm);
+    color: #ffffff;
+    font-size: clamp(3.8rem, 7vw, 7rem);
+    line-height: 1.06;
+}
+
+.hero-home .hero-subtitle {
+    max-width: 580px;
+    margin: 0 0 var(--space-xl);
+    color: rgba(255, 255, 255, 0.86);
+    font-size: var(--font-size-lg);
+    line-height: 1.6;
+}
+
+.hero-home .hero-cta,
+.cta-section .cta-button {
+    padding: var(--space-sm) var(--space-xl);
+    background: var(--clr-accent-warm);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 999px;
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(75, 47, 25, 0.22);
+}
+
+.hero-home .hero-cta:hover,
+.cta-section .cta-button:hover {
+    background: #c68a50;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.features {
+    gap: var(--space-md);
+    padding: var(--space-xl) 0;
+}
+
+.features .feature-card {
+    border-color: rgba(31, 81, 70, 0.1);
+    border-radius: var(--radius-lg);
+    box-shadow: none;
+    text-align: left;
+}
+
+.features .feature-card:hover {
+    border-color: rgba(31, 81, 70, 0.24);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.features .feature-card .feature-icon {
+    font-size: 3.2rem;
+}
+
+.featured-routes {
+    padding: var(--space-xl) 0;
+}
+
+.featured-routes h2,
+.featured-routes .section-subtitle {
+    text-align: left;
+}
+
+.featured-routes .featured-grid .featured-route {
+    border-color: rgba(31, 81, 70, 0.1);
+    border-radius: var(--radius-lg);
+}
+
+.featured-routes .featured-grid .featured-route:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-6px);
+}
+
+.featured-routes .featured-grid .featured-route .featured-image {
+    height: 240px;
+}
+
+.featured-routes .featured-grid .featured-route .featured-image img {
+    transition: transform 0.5s ease;
+}
+
+.featured-routes .featured-grid .featured-route:hover .featured-image img {
+    transform: scale(1.06);
+}
+
+.featured-routes .featured-grid .featured-route .featured-content {
+    padding: var(--space-xl);
+}
+
+.featured-routes .featured-grid .featured-route .featured-content .featured-link {
+    color: var(--clr-primary);
+}
+
+.cta-section {
+    padding: var(--space-2xl);
+    background:
+        linear-gradient(110deg, rgba(23, 61, 54, 0.97), rgba(31, 81, 70, 0.9)),
+        url('/images/routes/coastal-breeze.webp') center / cover;
+    border-radius: 24px;
+}
+
+.cta-section h2,
+.cta-section p {
+    color: #ffffff;
+}
+
+.cta-section p {
+    color: rgba(255, 255, 255, 0.76);
+}
+
+#filters {
+    padding: var(--space-lg);
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(31, 81, 70, 0.12);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    backdrop-filter: blur(14px);
+}
+
+#filters .filter-group {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: stretch;
+    color: var(--clr-primary);
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+#filters select {
+    width: 100%;
+    padding: var(--space-sm) var(--space-md);
+    border-color: var(--clr-border);
+    border-radius: var(--radius-md);
+    color: var(--clr-text-primary);
+    font-size: var(--font-size-md);
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.routes-grid {
+    gap: var(--space-md);
+}
+
+.routes-grid .route-card {
+    position: relative;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.92);
+    border-color: rgba(31, 81, 70, 0.12);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.routes-grid .route-card::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 5px;
+    background: var(--clr-primary);
+    content: '';
+}
+
+.routes-grid .route-card.central,
+.routes-grid .route-card.northern,
+.routes-grid .route-card.kansai,
+.routes-grid .route-card.hokkaido {
+    background: rgba(255, 255, 255, 0.94);
+    border-color: rgba(31, 81, 70, 0.12);
+}
+
+.routes-grid .route-card.central::before {
+    background: #b17a45;
+}
+
+.routes-grid .route-card.northern::before {
+    background: #567d9a;
+}
+
+.routes-grid .route-card.kansai::before {
+    background: #a96f82;
+}
+
+.routes-grid .route-card.hokkaido::before {
+    background: #60919a;
+}
+
+.routes-grid .route-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.routes-grid .route-card .route-header h2.route-name {
+    color: var(--clr-text-primary);
+    font-size: var(--font-size-2xl);
+}
+
+.routes-grid .route-card .route-header .route-region {
+    color: var(--clr-primary);
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+.routes-grid .route-card .route-actions a.view-details-btn,
+article.route-detail .route-schedules .schedules-grid .schedule-card .book-btn {
+    border-color: var(--clr-primary);
+    border-radius: 999px;
+    background-color: var(--clr-primary);
+    font-weight: 700;
+}
+
+.routes-grid .route-card .route-actions a.view-details-btn:hover,
+article.route-detail .route-schedules .schedules-grid .schedule-card .book-btn:hover {
+    background-color: var(--clr-accent);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+article.route-detail .route-header {
+    align-items: stretch;
+    overflow: hidden;
+    padding: var(--space-xl);
+    background: linear-gradient(135deg, #173d36, #255e53);
+    border-radius: 24px;
+    box-shadow: var(--shadow-md);
+}
+
+article.route-detail .route-header .route-header-content {
+    justify-content: center;
+}
+
+article.route-detail .route-header .route-header-content .route-name,
+article.route-detail .route-header .route-header-content .route-description {
+    color: #ffffff;
+}
+
+article.route-detail .route-header .route-header-content .route-description {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+article.route-detail .route-header .route-header-content .highlights .highlight-tag {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.22);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+article.route-detail .route-header .route-image {
+    box-shadow: none;
+}
+
+article.route-detail .route-info .info-grid .info-item,
+article.route-detail .route-info .route-stations .stations,
+article.route-detail .route-info .route-schedules .schedules-grid .schedule-card {
+    border-color: rgba(31, 81, 70, 0.12);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+article.route-detail .route-info .route-operating .months-grid .month-badge {
+    border-color: rgba(31, 81, 70, 0.14);
+    border-radius: 999px;
+    color: var(--clr-primary);
+}
+
+article.booking-page .route-header {
+    padding: var(--space-xl);
+    background: linear-gradient(135deg, #173d36, #255e53);
+    border: none;
+    border-radius: var(--radius-lg);
+}
+
+article.booking-page .route-header .route-header-content .route-name,
+article.booking-page .route-header .route-header-content .route-description {
+    color: #ffffff;
+}
+
+article.booking-page .route-header .route-header-content .route-description {
+    color: rgba(255, 255, 255, 0.76);
+}
+
+article.booking-page .booking-form > section {
+    padding: var(--space-xl);
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(31, 81, 70, 0.12);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+article.booking-page .booking-form .ticket-selection .ticket-options .ticket-card {
+    border-color: rgba(31, 81, 70, 0.14);
+}
+
+article.booking-page .booking-form .ticket-selection .ticket-options .ticket-card:hover {
+    transform: translateY(-3px);
+}
+
+article.booking-page .booking-form .ticket-selection .ticket-options .ticket-card input[type='radio']:checked ~ .ticket-content {
+    background-color: var(--clr-primary-pale);
+}
+
+article.booking-page .booking-form .booking-summary {
+    border-color: rgba(31, 81, 70, 0.18);
+    background: linear-gradient(135deg, #ffffff, #eef5f2);
+}
+
+article.confirmation-page .confirmation-header {
+    background:
+        linear-gradient(135deg, rgba(220, 235, 229, 0.96), rgba(255, 255, 255, 0.94)),
+        var(--clr-surface);
+    border: 1px solid rgba(31, 81, 70, 0.16);
+    box-shadow: var(--shadow-sm);
+}
+
+article.confirmation-page .confirmation-header .booking-reference {
+    border-color: var(--clr-accent-warm);
+    background: #ffffff;
+}
+
+article.confirmation-page .confirmation-content .booking-details .details-grid .detail-card,
+article.confirmation-page .confirmation-content .passengers-info .passengers-list .passenger-info-card {
+    border-color: rgba(31, 81, 70, 0.12);
+    border-radius: var(--radius-lg);
+}
+
+article.confirmation-page .confirmation-content .next-steps .steps-list .step-item .step-number {
+    background-color: var(--clr-accent-warm);
+}
+
+.scenario-background,
+.scenario-tasks,
+.hints-section,
+main > p {
+    max-width: 900px;
+}
+
+.scenario-background,
+.scenario-tasks {
+    padding: var(--space-xl);
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(31, 81, 70, 0.1);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 767px) {
+    #filters {
+        grid-template-columns: 1fr;
+    }
+
+    header .content .logo img {
+        height: 58px;
+    }
+}
+
+@media print {
+    @page {
+        margin: 0.5in;
+    }
+
+    body {
+        background: #ffffff;
+    }
+
+    article.confirmation-page .confirmation-header {
+        box-shadow: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}

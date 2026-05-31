@@ -1,32 +1,32 @@
 :root {
-    /* Colors - Soft Pastel Green Theme */
-    --clr-primary: #7fa98f;
-    --clr-primary-light: #a8c9b8;
-    --clr-primary-pale: #d4e8dd;
-    --clr-accent: #9eb4a5;
-    --clr-accent-warm: #c8b89e;
+    /* Colors - Deep Forest and Warm Brass Theme */
+    --clr-primary: #1f5146;
+    --clr-primary-light: #397568;
+    --clr-primary-pale: #dcebe5;
+    --clr-accent: #173d36;
+    --clr-accent-warm: #b17a45;
 
     /* Lighter secondary variants */
-    --clr-primary-secondary: rgba(159, 207, 184, 0.3);
-    --clr-primary-light-secondary: rgba(198, 225, 208, 0.3);
-    --clr-primary-pale-secondary: rgba(234, 247, 240, 0.3);
-    --clr-accent-secondary: rgba(192, 213, 201, 0.3);
-    --clr-accent-warm-secondary: rgba(230, 220, 207, 0.3);
+    --clr-primary-secondary: rgba(31, 81, 70, 0.12);
+    --clr-primary-light-secondary: rgba(57, 117, 104, 0.14);
+    --clr-primary-pale-secondary: rgba(220, 235, 229, 0.55);
+    --clr-accent-secondary: rgba(23, 61, 54, 0.12);
+    --clr-accent-warm-secondary: rgba(177, 122, 69, 0.14);
     
-    --clr-background: #f8faf9;
+    --clr-background: #f7f5ef;
     --clr-surface: #ffffff;
-    --clr-surface-alt: #f0f4f2;
+    --clr-surface-alt: #f0eee7;
     
-    --clr-text-primary: #2d3e3a;
-    --clr-text-secondary: #5a6f68;
-    --clr-text-muted: #8b9d96;
+    --clr-text-primary: #1d312e;
+    --clr-text-secondary: #526560;
+    --clr-text-muted: #82908c;
 
     --clr-text-alt-primary: #f8faf9;
     --clr-text-alt-secondary: #d8e3dd;
     --clr-text-alt-muted: #a8c9b8;
     
-    --clr-border: #d8e3dd;
-    --clr-border-light: #e8f0eb;
+    --clr-border: #d8dfda;
+    --clr-border-light: #e8ece9;
     
     /* Regional Colors */
     --clr-region-central: #faf6f0;
@@ -56,10 +56,10 @@
     --clr-winter-text: #3a4f6b;
 
     /* Link Colors */
-    --clr-link: #6fa8d6;
-    --clr-link-hover: #3f7fb0;
-    --clr-link-md: #4f8fc3;
-    --clr-link-md-hover: #2f6f93;
-    --clr-link-dark: #2f6f93;
-    --clr-link-dark-hover: #123f63;
+    --clr-link: #2f7568;
+    --clr-link-hover: #173d36;
+    --clr-link-md: #8cc7bb;
+    --clr-link-md-hover: #dcebe5;
+    --clr-link-dark: #1f5146;
+    --clr-link-dark-hover: #173d36;
 }
